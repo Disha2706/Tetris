@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1250px;
+}
+
+#score {
+    display: inline-block;
+}
+
+.scorecard {
+    position: absolute;
+    color: #00ffff;
+    font-family: 'VT323', monospace;
+    /* transform: translate(0%, 50%); */
+    top: 510px;
+    left: 640px;
+}
+
+div {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+}
+
+canvas {
+    position: absolute;
+    transform: translate(260%, 20%);
+    border: solid 10px #e60000;
+    border-radius: 25px;
+    border-bottom: solid 40px #e60000;
+    display: block;
+    margin: 0 auto;
+}
+
+.dropbtn {
+    background-color: red;
+    color: aqua;
+    padding: 1px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    left: 600px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #7649fe;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content button {
+    background-color: #7649fe;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    color: black;
+    font-family: 'VT323', monospace;
+    padding: 2px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content button:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.instructions{
+    position: absolute;
+    color: #00ffff;
+    font-family: 'VT323', monospace;
+    top: 270px;
+    left: 340px;
+}

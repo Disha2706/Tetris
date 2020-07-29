@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Tetris Game JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebfafc2eb8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dropdown">
+            <button class="dropbtn">CHANGE THEME</button>
+            <div class="dropdown-content">
+                <button onclick="document.body.style.backgroundImage = 'url(bg.png)'">Space</button>
+                <button onclick="document.body.style.backgroundImage = 'url(bg1.jpg)'">Northern lights</button>
+                <button onclick="document.body.style.backgroundImage = 'url(bg3.jpg)'">Desert</button>
+            </div>
+        </div>
+        <div class="instructions">Instructions
+            <ul style="list-style-type:none;">
+                <li><i class="fas fa-arrow-up"></i> Rotate</li>
+                <li><i class="fas fa-arrow-down"></i> Down</li>
+                <li><i class="fas fa-arrow-left"></i> Left</li>
+                <li><i class="fas fa-arrow-right"></i> Right</li>
+            </ul>
+        </div>
+        <canvas id="tetris" width="200" height="400"></canvas>
+        <div class="scorecard">
+            Score : <div id="score">0</div>
+        </div>
+
+    </div>
+    <script src="tetrispieces.js"></script>
+    <script src="tetris.js"></script>
+</body>
+
+</html>
